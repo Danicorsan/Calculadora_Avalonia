@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="325" d:DesignHeight="500"
+        x:Class="Calculadora.MainWindow"
+        Title="Calculadora"
+        Width="325"
+        Height="500">
+        
+<StackPanel Background="Gray">
+        <TextBlock TextAlignment="Center" FontSize="30" Foreground="White" Text="Calculadora" Background="Gray"/>
+        <TextBlock Name="TextBlockResultado" Text="" Background="DarkGray" Foreground="White" FontSize="40" TextAlignment="End"></TextBlock>
+        
+        
+        <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Foreground="White" Name="Button7" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="7"></Button>
+                <Button Foreground="White" Name="Button8" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="8"></Button>
+                <Button Foreground="White" Name="Button9" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="9"></Button>
+                <Button Foreground="White" Name="ButtonBarra" Click="Signos" Width="65" FontSize="56" Margin="5" Content="÷"></Button>
+        </StackPanel>
+        
+        <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Foreground="White" Name="Button4" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="4"></Button>
+                <Button Foreground="White" Name="Button5" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="5"></Button>
+                <Button Foreground="White" Name="Button6" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="6"></Button>
+                <Button Foreground="White" Name="ButtonMultiplicar" Click="Signos" Width="65" FontSize="56" Margin="5" Content="x"></Button>
+        </StackPanel>
+        
+        <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Foreground="White" Name="Button1" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="1"></Button>
+                <Button Foreground="White" Name="Button2" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="2"></Button>
+                <Button Foreground="White" Name="Button3" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="3"></Button>
+                <Button Foreground="White" Name="ButtonMas" Click="Signos" Width="65" FontSize="56" Margin="5" Content="+"></Button>
+        </StackPanel>
+        
+        <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Foreground="White" Name="ButtonC" Click="Limpiar" Width="65" FontSize="56" Margin="5" Content="C"></Button>
+                <Button Foreground="White" Name="Button0" Click="Escribir" Width="65" FontSize="56" Margin="5" Content="0"></Button>
+                <Button Foreground="White" Name="ButtonIgual" Click="Resolver" Width="65" FontSize="56" Margin="5" Content="="></Button>
+        </StackPanel>
+        
+</StackPanel>
+
+    
+</Window>
